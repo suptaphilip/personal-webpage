@@ -1,0 +1,71 @@
+.center{
+	text-align: center;
+}
+.left{
+	text-align:left;
+}
+.btn{
+	border:2px solid;
+}
+.btn-toolbar .btn-group .btn{
+	border:none;
+}
+label.uploadbutton input {
+	display: none;   
+}
+iframe{
+	border: 1px solid #EEE;
+}
+.logo{
+	width:50px;
+}
+label.radio{
+	text-align: left;
+}
+.row.dataset_options > div{
+	display:none;
+}
+.row.dataset_options > div.active{
+	display:block;
+}
+
+.header-10-sub .background {
+	background-image: url("../img/bg/neat.jpg");
+	opacity: 0.85;
+	filter: alpha(opacity=85);
+}
+.content-23.custom-bg {
+	background-image: url('../img/bg/trento.jpg');
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.content-8 div.image-container {
+	height:300pxr;
+}
+
+a {
+	color:white;
+}
+
+.hero-unit h1.title{
+	font-size:80px;
+	font-weight: 100;
+}
+.hero-unit .subtitle, .hero-unit .subtitle *{
+	font-weight: 100 !important;
+}
+.avatar{
+	margin-top: -15px;
+	height: 60px;
+}
+.iphone{
+	height:600px;
+}
+.muted{
+	opacity:0.5;
+}
+.social-feed-image{
+	height:500px;
+}
