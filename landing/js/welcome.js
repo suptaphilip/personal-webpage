@@ -9,7 +9,7 @@ $(document).ready(function(){
        afterMove: function(index) {},  
        loop: false,                   
        keyboard: true,                
-       responsiveFallback: false       
+       responsiveFallback: 9000       
    });
     $('.go-to').click(function(){
         var target = $(this).attr('go-to');
