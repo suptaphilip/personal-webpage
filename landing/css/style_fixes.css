@@ -1,8 +1,15 @@
+ul{
+	list-style-type:none;
+}
+
 .center{
 	text-align: center;
 }
 .left{
 	text-align:left;
+}
+.right{
+	text-align:right;
 }
 .btn{
 	border:2px solid;
@@ -54,7 +61,9 @@ a {
 	font-weight: 100;
 }
 .hero-unit .subtitle, .hero-unit .subtitle *{
-	font-weight: 100 !important;
+	font-weight: 150 !important;
+	color:white;
+
 }
 .avatar{
 	margin-top: -15px;
@@ -68,4 +77,7 @@ a {
 }
 .social-feed-image{
 	height:500px;
+}
+.ultra-light{
+	font-weight: 100;
 }
