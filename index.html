@@ -28,25 +28,9 @@
 
 </head>
 <body>
-	<!--header class="header-10">
-		<div class="container">
-			<div class="navbar span12">
-				<div class="navbar-inner">
-					<button type="button" class="btn btn-navbar"> </button>
-					
-					<div class="nav-collapse collapse pull-right">
-						<ul class="nav">
-							<li><a href="{% url 'kitchen-home'%}">My Tasks</a></li>
-							<li><a href="{% url 'kitchen-home'%}">{{user.profile.short_name}}</a></li>
-							<li><a class='muted' href="{% url 'logout'%}">Logout <i class="fa fa-arrow-circle-o-right"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header-->
+
 	<div class='main'>
-		<section class="header-10-sub v-center bg-midnight-blue welcome-block-primo" >
+		<section class="header-10-sub v-center bg-midnight-blue welcome-block-primo" id="intro" >
 			<div class="background">&nbsp;</div>
 			<div>
 				<div class="container">
@@ -84,18 +68,23 @@
 		</section>      
 
 
-		<section class="content-23 v-center ">
+		<section class="content-23 v-center" id ="active_projects">
 			<div>
 				<div class="container">
 					<div class="hero-unit">
-						<h1>Active projects:</h1>
+						<h6>Active projects:</h6>
+						<h1>
+							<a href="#3" class='go-to' go-to="3">CrowdCafe</a>,
+							<a href="#4" class='go-to' go-to="4">Codesign</a>,
+							<a href="#5" class='go-to' go-to="5">Social-feed</a>
+						</h1>
 					</div>
 				</div>
 			</div>
 		</section>
 
 
-		<section class="content-7 v-center crowdcafe">
+		<section class="content-7 v-center crowdcafe" id = "crowdcafe">
 			<div>
 				<div class="container">
 					<div class="row">
@@ -108,123 +97,144 @@
 							<h6>Mobile Crowdsourcing platform</h6>
 							<p/>We beleive micro-tasks should be executed via <b>mobile phones</b> to give workers the maximum level of freedom and fun.</p>
 							<p>
-								We beleive that workers should spend minimum time on selecting and understanding tasks. For this we came up with 3 simple task categories: <i>Espresso</i>, <i>Cappucino</i>, <i>Wine</i>.</p>
-								<br/><br/><br/>
-								<p class='center'>
-									<a href="http://github.com/CrowdCafe/crowdcafe/" target = "_blank" class="btn btn-github btn-lg"><i class="fa fa-github" ></i> open-source</a>
-									<a href = "http://crowdcafe.io" target = "_blank"  class="btn btn-lg btn-googleplus">
-										crowdcafe.io
-									</a>
-								</p>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</section>
-
-			<section class="content-7 v-center codesign">
-				<div>
-					<div class="container">
-						<div class="row">
-
-							<div class="span4 offset2">
-								<h1 class='center'>Codesign</h1>
-
-								<h6>Visual collaboration tool</h6>
-								<p>Create projects, upload images, leave comments, define tasks, share with collaborators, control execution. Get your design- and web-projects done with Codesign.
-								</p>
-								<br/><br/><br/>
-								<p class='center'>        
-									<a href = "http://codesign.io" target = "_blank"  class="btn btn-lg btn-googleplus">
-										codesign.io
-									</a>
-								</p>              
-							</div>
-							<div class="span6 center">
-								<img src="landing/img/projects/codesign_mac.png" >
-							</div>
+								We beleive that workers should spend minimum time on selecting and understanding tasks. For this we came up with 3 simple task categories: <i>Espresso</i>, <i>Cappucino</i>, <i>Wine</i>.
+							</p>
+							<br/><br/><br/>
+							<p class='center'>
+								<a href="http://github.com/CrowdCafe/crowdcafe/" target = "_blank" class="btn btn-github btn-lg"><i class="fa fa-github" ></i> open-source
+								</a>
+								<a href = "http://crowdcafe.io" target = "_blank"  class="btn btn-lg btn-googleplus">
+									crowdcafe.io
+								</a>
+							</p>
 						</div>
 					</div>
 				</div>
-			</section>
+			</div>
+		</section>
 
-			<section class="content-7 v-center crowdcafe">
-				<div>
-					<div class="container">
-						<div class="row">
-							<div class="span6 center">
-								<img src="landing/img/projects/socialfeed.png" class="social-feed-image">
-							</div>
-							<div class="span4">
-								<h1 class='center'>Social-feed</h1>
+		<section class="content-7 v-center codesign" id="codesign">
+			<div>
+				<div class="container">
+					<div class="row">
 
-								<h6>jQuery plugin to visualize feeds from different social networks</h6>
-								<p>
-									You don't need to have any server side code to run social-feed.
-								</p>
+						<div class="span4 offset2">
+							<h1 class='center'>Codesign</h1>
 
-								<p>Integrated with: <i>Facebook</i>, <i>Instagram</i>, <i>VK</i>, <i>Google+</i>.</p>
-								<p>
-									No fee to use. Contributions are appriciated.
-								</p>
-								<p>
-									Have a question? Just drop me an email.
-								</p>
-								<br/><br/><br/>
-								<p class='center'>
-									<a href="https://github.com/pavelk2/social-feed/" target = "_blank" class="btn btn-github btn-lg"><i class="fa fa-github" ></i> open-source</a>
-									<a href = "http://pavelk2.github.io/social-feed/" target = "_blank" class="btn btn-lg btn-googleplus">
-										demo
-									</a>
-								</p>
-							</div>
+							<h6>Visual collaboration tool</h6>
+							<p>Create projects, upload images, leave comments, define tasks, share with collaborators, control execution. Get your design- and web-projects done with Codesign.
+							</p>
+							<br/><br/><br/>
+							<p class='center'>        
+								<a href = "http://codesign.io" target = "_blank"  class="btn btn-lg btn-googleplus">
+									codesign.io
+								</a>
+							</p>              
 						</div>
-
-					</div>
-				</div>
-			</section>
-
-			<!-- content-23  -->
-			<section class="content-23 livein">
-				<div>                
-					<div class="container">
-						<div class="delimiter-big"></div>
-						<div class="hero-unit hero-unit-bordered">
-							<h1>I live in Trento, Italy</h1>
+						<div class="span6 center">
+							<img src="landing/img/projects/codesign_mac.png" >
 						</div>
 					</div>
 				</div>
-			</section>
-		</div>
+			</div>
+		</section>
 
-		<!-- StartupFramework -->
-		<script src="libs/StartupFramework/Developer/flat-ui/js/jquery-1.8.3.min.js" ></script>
+		<section class="content-7 v-center crowdcafe" id="social_feed">
+			<div>
+				<div class="container">
+					<div class="row">
+						<div class="span6 center">
+							<img src="landing/img/projects/socialfeed.png" class="social-feed-image">
+						</div>
+						<div class="span4">
+							<h1 class='center'>Social-feed</h1>
 
-		<script src="libs/StartupFramework/Developer/flat-ui/js/bootstrap.min.js"></script>
-<!--[if lt IE 8]>
-<script src="Developer/flat-ui/js/icon-font-ie7.js"></script>
-<![endif]-->
-<script src="libs/StartupFramework/Developer/common-files/js/jquery.scrollTo-1.4.3.1-min.js"></script>
-<script src="libs/StartupFramework/Developer/common-files/js/jquery.parallax.min.js"></script>
-<script src="libs/StartupFramework/Developer/flat-ui/js/bootstrap-select.js"></script>
-<script src="libs/StartupFramework/Developer/flat-ui/js/bootstrap-switch.js"></script>
-<script src="libs/StartupFramework/Developer/flat-ui/js/flatui-checkbox.js"></script>
-<script src="libs/StartupFramework/Developer/flat-ui/js/flatui-radio.js"></script>
+							<h6>jQuery plugin to visualize feeds from different social networks</h6>
+							<p>
+								You don't need to have any server side code to run social-feed.
+							</p>
 
-<script src="libs/StartupFramework/Developer/common-files/js/startup-kit.js"></script>
-<script src="libs/jQueryOnePageScroll/jquery.onepage-scroll.min.js"></script>
-<script src="landing/js/welcome.js"></script>
+							<p>Integrated with: <i>Facebook</i>, <i>Instagram</i>, <i>VK</i>, <i>Google+</i>.</p>
+							<p>
+								No fee to use. Contributions are appriciated.
+							</p>
+							<p>
+								Have a question? Just drop me an email.
+							</p>
+							<br/><br/><br/>
+							<p class='center'>
+								<a href="https://github.com/pavelk2/social-feed/" target = "_blank" class="btn btn-github btn-lg"><i class="fa fa-github" ></i> open-source</a>
+								<a href = "http://pavelk2.github.io/social-feed/" target = "_blank" class="btn btn-lg btn-googleplus">
+									demo
+								</a>
+							</p>
+						</div>
+					</div>
 
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+				</div>
+			</div>
+		</section>
 
-ga('create', 'UA-35240709-1', 'kucherbaev.com');
-ga('send', 'pageview');
+		<!-- content-23  -->
+		<section class="content-23 v-center" id ="livein">
+			<div>
+				<div class="container">
+					<div class="hero-unit">
+						<h6>current location:</h6>
+						<h1>
+							Trento, Italy
+						</h1>
+						<h6>spent more than a month in:</h6>
+						<h1>
+							San Francisco, CA; Williamsburg, VA
+						</h1>
+						<h6>city of origin:</h6>
+						<h1>
+							Ufa, Russia
+						</h1>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="content-23 v-center" id ="contact">
+			<div>
+				<div class="container">
+					<div class="hero-unit">
+						<h6>drop me an email:</h6>
+						<h1><a href="mailto:pavel@kucherbaev.com" target="_blank">pavel@kucherbaev.com</a></h1>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
 
-</script>
+	<!-- StartupFramework -->
+	<script src="libs/StartupFramework/Developer/flat-ui/js/jquery-1.8.3.min.js" ></script>
+
+	<script src="libs/StartupFramework/Developer/flat-ui/js/bootstrap.min.js"></script>
+	<!--[if lt IE 8]>
+	<script src="Developer/flat-ui/js/icon-font-ie7.js"></script>
+	<![endif]-->
+	<script src="libs/StartupFramework/Developer/common-files/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+	<script src="libs/StartupFramework/Developer/common-files/js/jquery.parallax.min.js"></script>
+	<script src="libs/StartupFramework/Developer/flat-ui/js/bootstrap-select.js"></script>
+	<script src="libs/StartupFramework/Developer/flat-ui/js/bootstrap-switch.js"></script>
+	<script src="libs/StartupFramework/Developer/flat-ui/js/flatui-checkbox.js"></script>
+	<script src="libs/StartupFramework/Developer/flat-ui/js/flatui-radio.js"></script>
+
+	<script src="libs/StartupFramework/Developer/common-files/js/startup-kit.js"></script>
+	<script src="libs/jQueryOnePageScroll/jquery.onepage-scroll.min.js"></script>
+	<script src="landing/js/welcome.js"></script>
+
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-35240709-1', 'kucherbaev.com');
+	ga('send', 'pageview');
+
+	</script>
 </body>
 </html>
