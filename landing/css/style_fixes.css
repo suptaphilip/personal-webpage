@@ -120,6 +120,7 @@ section .control-btn {
 	left: 50%;
 	bottom: 20px;
 	margin-left: -26.5px;
+	display:none;
 }
 @media (max-width: 1024px) {
   section .control-btn {
