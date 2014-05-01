@@ -15,4 +15,10 @@ $(document).ready(function(){
         var target = $(this).attr('go-to');
         $('.main').moveTo(target);
     });
+    $('.fui-arrow-down').click(function(){
+      var target = $('.main').children().index($(this).parent())+2;
+      console.log(target);
+      $('.main').moveTo(target);
+      return false;
+    });
 });
