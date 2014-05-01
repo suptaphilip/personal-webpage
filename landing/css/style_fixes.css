@@ -41,11 +41,11 @@ label.radio{
 	opacity: 0.85;
 	filter: alpha(opacity=85);
 }
-.content-23.custom-bg {
+.content-23.livein{
 	background-image: url('../img/bg/trento.jpg');
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+
 }
 
 .content-8 div.image-container {
@@ -70,7 +70,7 @@ a {
 	height: 60px;
 }
 .iphone{
-	height:600px;
+	height:500px;
 }
 .muted{
 	opacity:0.5;
