@@ -53,7 +53,7 @@ label.radio{
 
 .header-10-sub .background {
 	background-image: url("../img/bg/neat.jpg");
-	opacity: 0.85;
+	opacity: 0.95;
 }
 .content-23.livein{
 	background-image: url('../img/bg/trento.jpg');
@@ -66,10 +66,16 @@ label.radio{
 	height:300pxr;
 }
 
-a {
+a{
 	color:white;
 }
+.light-background a{
+	color:	#16A085;
 
+}
+.light-background a:hover{
+	color:#1ABC9C;
+}
 .hero-unit h1.title{
 	font-size:80px;
 	font-weight: 100;
