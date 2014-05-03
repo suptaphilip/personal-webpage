@@ -101,6 +101,9 @@ a{
 .ultra-light{
 	font-weight: 100;
 }
+.tiny{
+	font-weight: 200;
+}
 section .control-btn {
 	width: 53px;
 	height: 53px;
@@ -123,7 +126,17 @@ section .control-btn {
 	display:none;
 }
 @media (max-width: 1024px) {
-  section .control-btn {
-    display:none;
-  }
+	section .control-btn {
+		display:none;
+	}
+}
+.btn-white{
+	color:#bbb;
+	background: none;
+	border-color:#bbb;
+}
+.btn-white:hover{
+	color:#444;
+	background: none;
+	border-color:#444;
 }
