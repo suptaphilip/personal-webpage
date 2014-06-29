@@ -23,6 +23,7 @@ $(document).ready(function(){
   });
   $('.samantha').click(function(){
     speechRecognition();
+    $(this).fadeOut(5000);
   });
 
 });
